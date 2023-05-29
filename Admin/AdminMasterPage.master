@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="Admin_AdminMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Admin</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="subcontainer">
+            <form id="form1" runat="server">
+                <table cellpadding="0" cellspacing="0" border="0px">
+                    <tr>
+                        <td>
+                            <div class="header">
+                                <table cellpadding="0" cellspacing="0" border="0px" style="height: 184px">
+                                    <tr>
+                                        <td rowspan="2">
+                                            <img src="../Images/logo1.png" style="height: 195px; width: 200px" />
+                                        </td>
+                                        <td>
+                                            <img src="../Images/abc.png" style="height: 100px; width: 200px" class="center" />
+                                        </td>
+                                        <td rowspan="2">
+                                            <img src="../Images/logo2.png" style="height: 175px; width: 200px" />
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <img src="../Images/logocomputer.png" style="height: 50px; width: 620px" />
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="menu">
+                                <ul id="css3menu">
+                                    <li><a href="Admin.aspx">Admin</a></li>
+                                    <li><a href="Category.aspx">Category</a></li>
+                                    <li><a href="Product.aspx">Product</a></li>
+                                    <li><a href="Deliver.aspx">Deliver</a></li>
+                                    <li><a href="OrderList.aspx">OrderList</a></li>
+                                    <li>
+                                        <asp:LinkButton ID="lbtnLogOut" runat="server" OnClick="lbtnLogOut_Click">LogOut</asp:LinkButton>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="space"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="space"></td>
+                    </tr>
+                    <tr>
+                        <td class="footer">Copyright@ 2023 All Rights Reserved: || Designed by <strong>KMD-SE Department</strong>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

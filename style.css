@@ -1,0 +1,162 @@
+﻿.tablehead{
+    font-size:20px;
+    text-align:center;
+    font-weight:bold;
+}
+ 
+.col {
+    width:200px;
+    height:40px;
+    text-align:right;
+}
+ 
+body {
+    background-image:url(Images/bg.gif);
+}
+ 
+.container {
+    font:100%/1.4 Verdana,Arial,Helvetica,sans-serif;
+}
+ 
+.subcontainer {
+    background:#fff;
+    width:1020px;
+    margin:0 auto;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+ 
+.header {
+    background:#633 url(Images/bg.jpg);
+}
+ 
+.menu {
+    background:#000;
+    width:1020px;
+    float:right;
+    margin-top:0px;
+}
+ 
+.footer {
+    height:50px;
+    text-align:center;
+    background:black;
+    color:white;
+}
+ 
+ul#css3menu {
+    padding:1px 1px 1px 0;
+    font-size:0;
+}
+ 
+ul#css3menu li {
+    display:block;
+    float:left;
+    margin:0 0 0 1px;
+}
+ 
+ul#css3menu a {
+    display:block;
+    text-decoration:none;
+    font:bold 12px Arial,sans-serif;
+    color:#ccc;
+    cursor:default;
+    padding:10px;
+    background-color:#17294b;
+    background-image:url(Images/menubk.png);
+    background-position:0 50%;
+}
+ 
+ul#css3menu li:hover a {
+    background-color:#5484c3;
+}
+ 
+.space {
+    height:20px;
+}
+ 
+.button {
+    border:1px solid black;
+    background-color:#f1f0f9;
+    width:60px;
+    text-align:center;
+    height:30px;
+}
+ 
+.adminorderlist {
+    float:left;
+    margin-left:60px;
+}
+ 
+.list {
+    text-decoration:none;
+    line-height:30px;
+}
+ 
+.list:hover {
+    padding:5px 0 5px 0;
+    color:black;
+    text-decoration:underline;
+}
+ 
+.box {
+    float:left;
+    width:196px;
+    height:auto;
+}
+ 
+.listbox {
+    width:196px;
+    height:auto;
+    border:1px #6da6b1 solid;
+    text-align:left;
+    margin-left:5px;
+}
+ 
+.img {
+    text-align:center;
+    height:100px;
+}
+ 
+.catTitle {
+    width:196px;
+    height:30px;
+    margin:0 0 0 0;
+    background:url(Images/CategoryBG.gif) no-repeat center;
+    text-align:center;
+    font-size:13px;
+    font-weight:bold;
+    color:#fff;
+    line-height:30px;
+}
+ 
+.prolist {
+    border:1px solid #3333ff;
+    width:180px;
+    height:200px;
+    text-align:center;
+}
+ 
+.price {
+    font-weight:bold;
+    color:red;
+}
+ 
+.detail {
+    font-weight:bold;
+    color:black;
+}
+ 
+.detail a {
+    text-decoration:none;
+}
+ 
+.detail a:hover {
+    color:blue;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
