@@ -36,10 +36,11 @@ public partial class Login : System.Web.UI.Page
         }
         else {
             Dt = AdminTbl.Admin_Select_By_AdminNamePassword(txtAdminName.Text, txtPassword.Text);
+            
             if (Dt.Rows.Count > 0)
             {
-                Session["AdminLogin"] = Dt.Rows[0][1];
-                Response.Redirect("/Admin.aspx");
+                Session["LoginAdmin"] = Dt.Rows[0][1];
+                Response.Redirect("Admin/Admin.aspx");
                 Response.Write("Correct");
             }
             else {

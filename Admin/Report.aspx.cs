@@ -27,9 +27,10 @@ public partial class Admin_Report : System.Web.UI.Page
             CrystalReportViewer1.DataBind();
             CrystalReportViewer1.ReportSource = report;
             CrystalReportViewer2.Visible = false;
-            // CrystalReportViewer3.Visible = false;
+            CrystalReportViewer3.Visible = false;
             //CrystalReportViewer4.Visible = false;
         }
+
         else if (Session["ReportDt"] != null && Session["ReportName"] == "crptCategory.rpt")
         {
 
@@ -41,7 +42,22 @@ public partial class Admin_Report : System.Web.UI.Page
             CrystalReportViewer2.DataBind();
             CrystalReportViewer2.ReportSource = report;
             CrystalReportViewer1.Visible = false;
-            //CrystalReportViewer3.Visible = false;
+            CrystalReportViewer3.Visible = false;
+            //CrystalReportViewer4.Visible = false;
+        }
+
+        else if (Session["ReportDt"] != null && Session["ReportName"] == "crptProduct.rpt")
+        {
+
+            ReportDocument report = new ReportDocument();
+            report.Load(Server.MapPath(Session["ReportName"].ToString()));
+            report.SetDataSource((DataTable)Session["ReportDt"]);
+            report.SetDatabaseLogon(username, password);
+
+            CrystalReportViewer3.DataBind();
+            CrystalReportViewer3.ReportSource = report;
+            CrystalReportViewer1.Visible = false;
+            CrystalReportViewer2.Visible = false;
             //CrystalReportViewer4.Visible = false;
         }
     }

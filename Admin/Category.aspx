@@ -26,7 +26,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style1">
+                    <td class="auto-style2">
                         <asp:Button ID="btnNew" runat="server" Text="New" cssClass="button" OnClick="btnNew_Click"/>
                         <asp:Button ID="btnUpdate" runat="server" Text="Update" cssClass="button" OnClick="btnUpdate_Click"/>
                         <asp:Button ID="btnDelete" runat="server" Text="Delete" cssClass="button" OnClick="btnDelete_Click"/>
@@ -36,7 +36,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">
+                    <td class="auto-style3">
                         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="CatID" CellPadding="5" CellSpacing="1" Width="700px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
                             <Columns>
                                 <asp:BoundField DataField="No" HeaderText="No"></asp:BoundField>
