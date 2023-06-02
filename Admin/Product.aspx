@@ -103,7 +103,7 @@
                         <asp:Label ID="Label4" runat="server" Text="Price:"></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="txtPrice" runat="server" Width="200"></asp:TextBox>
+                        <asp:TextBox ID="txtPrice" runat="server" Width="200" AutoComplete="Off"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -111,7 +111,7 @@
                         <asp:Label ID="Label5" runat="server" Text="Quantity:"></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="txtQuantity" runat="server" Width="200"></asp:TextBox>
+                        <asp:TextBox ID="txtQuantity" runat="server" Width="200" AutoComplete="Off"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -119,7 +119,7 @@
                         <asp:Label ID="Label6" runat="server" Text="Image:"></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="txtImage" runat="server" Width="200"></asp:TextBox>
+                        <asp:TextBox ID="txtImage" runat="server" Width="200" AutoComplete="Off"></asp:TextBox>
                         <asp:FileUpload ID="FileUploadImage" runat="server" />
                     </td>
                 </tr>
